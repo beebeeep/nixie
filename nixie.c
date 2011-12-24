@@ -40,7 +40,7 @@ static gboolean time_handler(GtkWidget *digits[])
 	char hrs[3], min[3], sec[3], filename[80];
 	char img_prefix[80]; 
 	if(getImgPrefix(img_prefix)) {		//getImgPrefix returns non-zero value if it cannot find images
-		fprintf(stderr, "Cannot find images in /usr/share/games/nixie-clock and in current dir!\n");
+		fprintf(stderr, "Cannot find images in /usr/share/nixie-clock and in current dir!\n");
 		exit(-1);
 	}
 	strftime(hrs, 3, "%H", loctime);
