@@ -11,11 +11,11 @@ static int getImgPrefix(char *prefix)
 	int i, ok = 0;
 	char filename[80];
 	for(i = 0; i < 10; i++) {
-		sprintf(filename, "%s%i.gif", "/usr/share/games/nixie-clock/", i);
+		sprintf(filename, "%s%i.gif", "/usr/share/nixie-clock/", i);
 		ok = ok || lstat(filename, &b);
 	}
 	if(!ok)  
-		sprintf(prefix, "/usr/share/games/nixie-clock/");
+		sprintf(prefix, "/usr/share/nixie-clock/");
 	else {		
 		ok = 0;
 		for(i = 0; i < 10; i++) {
