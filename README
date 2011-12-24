@@ -1,0 +1,11 @@
+Nixie-clock, a simple GTK-2 program showing six nixie tubes displaying  current time (HHMMSS).
+
+Installing:
+Just run 'make' (GTK-2 development packages required) and 'make install' (default install prefix is /usr)
+
+Running:
+No parameters, just run `nixie`
+
+
+Migalin Danila
+bee.beeep@gmail.com
